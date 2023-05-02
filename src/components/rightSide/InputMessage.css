@@ -13,7 +13,7 @@
     outline: none;
     border: none;
     border-bottom:1px solid rgba(128, 128, 128, 0.388) ;
-    
+
 }
 
 .input-message input::placeholder {
@@ -54,6 +54,12 @@
     padding: 0 5px;
     font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side {
+    flex-basis: 65%;
     display: flex;
     flex-direction: column;
 }

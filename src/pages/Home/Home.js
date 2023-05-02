@@ -1,6 +1,6 @@
 
-import LeftSide from "../components/LeftSide/LeftSide"
-import RightSide from "../components/RightSide/RigthSide"
+import LeftSide from "../../components/LeftSide/LeftSide"
+import RightSide from "../../components/rightSide/RightSide"
 import './home.css'
 const Home = () => {
     

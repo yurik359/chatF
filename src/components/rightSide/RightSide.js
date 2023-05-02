@@ -11,7 +11,7 @@ import HeaderRight from '../HeaderRight/HeaderRight';
 
 
 
-const InputMessage = () => {
+const RightSide = () => {
     const {currentUser} = useContext(AuthContext)
     const [value, setValue] = useState('');
     const [messages, setMessages] = useState([]);
@@ -167,4 +167,4 @@ return (
 }
 
 
-export default InputMessage
+export default RightSide

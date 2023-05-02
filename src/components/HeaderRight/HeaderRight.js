@@ -33,6 +33,7 @@ const HeaderRight = ({isTyping,commonisType,memberCommon}) => {
         }
 
         const handleSelectUser = async (user) => {
+            if (user.uтid==currentUser.uid) return
             const combinedId =
             currentUser.uid > user.uid
               ? currentUser.uid + user.uid
@@ -102,7 +103,7 @@ const HeaderRight = ({isTyping,commonisType,memberCommon}) => {
             members list 
              </div>
             <div className="header-right__member-list" style={{display:closeMemList?'none':'block'}}>
-                {members&&members.map(e=>{ 
+                {members&&members.filter(e=>e.nickname!=='common chat').map(e=>{ 
                     return (<div className='member-list__item'
                              onClick={()=>handleSelectUser(e)}
                              key={e.uid}>
